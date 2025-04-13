@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project - A Cool New App</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            background-color: #007bff;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #fff;
+            color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .features {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .feature {
+            display: inline-block;
+            width: 30%;
+            margin: 0 1.5%;
+            vertical-align: top;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .signup {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .signup input[type="email"] {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .feature {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .feature {
+                width: 100%;
+                margin: 20px 0;
+            }
+
+            .signup input[type="email"] {
+                width: 90%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+            <h1>My Project</h1>
+            <p>A cool new app that will change your life!</p>
+            <a href="#" class="btn">Sign Up Now</a>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h3>Feature 1</h3>
+                <p>Description of Feature 1.</p>
+            </div>
+            <div class="feature">
+                <h3>Feature 2</h3>
+                <p>Description of Feature 2.</p>
+            </div>
+            <div class="feature">
+                <h3>Feature 3</h3>
+                <p>Description of Feature 3.</p>
+            </div>
+        </section>
+
+        <section class="signup">
+            <h2>Sign Up for Early Access</h2>
+            <form id="signup-form">
+                <input type="email" id="email" placeholder="Enter your email">
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+    </div>
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from submitting normally
+
+            const email = document.getElementById('email').value;
+            // Here you would typically send the email to your server or a service like Mailchimp
+            console.log('Email submitted:', email);
+            alert('Thank you for signing up!');
+        });
+    </script>
+</body>
+</html>

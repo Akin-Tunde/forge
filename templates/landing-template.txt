@@ -1,0 +1,273 @@
+Create a landing page with the following details:
+
+You are tasked with creating a landing page for {{name}}, which is {{description}}. The purpose of this landing page is {{purpose}}.
+
+Please generate a complete landing page with the following:
+
+1. A clean, modern design with responsive layout
+2. A hero section with a compelling headline and call-to-action
+3. A features section highlighting key benefits
+4. A sign-up form for collecting email addresses
+5. Appropriate styling with CSS
+6. Basic JavaScript for form validation if needed
+
+The landing page should be optimized for conversion and should clearly communicate the value proposition of {{name}}.
+
+Please provide the complete HTML, CSS, and JavaScript code for this landing page.
+
+HTML:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{name}}</title>
+  <style>
+    /* CSS will be inserted here */
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>{{name}}</h1>
+      <p class="lead">{{description}}</p>
+      <button class="cta">Sign Up Now</button>
+    </div>
+  </header>
+  
+  <section class="features">
+    <div class="container">
+      <h2>About {{name}}</h2>
+      <p>{{description}} - {{purpose}}</p>
+      
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>Feature 1</h3>
+          <p>Description of feature 1</p>
+        </div>
+        <div class="feature">
+          <h3>Feature 2</h3>
+          <p>Description of feature 2</p>
+        </div>
+        <div class="feature">
+          <h3>Feature 3</h3>
+          <p>Description of feature 3</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="signup">
+    <div class="container">
+      <h2>Get Early Access</h2>
+      <p>Be among the first to experience {{name}}.</p>
+      <form id="signup-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 {{name}}. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script>
+    // JavaScript will be inserted here
+  </script>
+</body>
+</html>
+```
+
+CSS:
+```css
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+header .lead {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #ff6b6b;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #ff5252;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  padding: 80px 0;
+}
+
+.features {
+  background-color: #f9f9f9;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.feature {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
+
+.feature h3 {
+  margin-bottom: 15px;
+  color: #6e8efb;
+}
+
+.signup {
+  background-color: #a777e3;
+  color: white;
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: 30px auto 0;
+  display: flex;
+}
+
+input[type="email"] {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  border-radius: 30px 0 0 30px;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 0 30px;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #ff5252;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 70px 0;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  header .lead {
+    font-size: 1.2rem;
+  }
+  
+  section {
+    padding: 60px 0;
+  }
+  
+  form {
+    flex-direction: column;
+  }
+  
+  input[type="email"] {
+    border-radius: 30px;
+    margin-bottom: 10px;
+  }
+  
+  form button {
+    border-radius: 30px;
+    padding: 15px 30px;
+  }
+}
+```
+
+JavaScript:
+```javascript
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('signup-form');
+  
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const email = form.querySelector('input[type="email"]').value;
+    
+    if (validateEmail(email)) {
+      // Here you would typically send the data to your backend
+      alert('Thank you for signing up! We will be in touch soon.');
+      form.reset();
+    } else {
+      alert('Please enter a valid email address.');
+    }
+  });
+  
+  function validateEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
+});
+```

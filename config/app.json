@@ -1,0 +1,21 @@
+{
+  "neynar": {
+    "apiEndpoint": "https://api.neynar.com",
+    "webhookPath": "/webhook/farcaster",
+    "mentionFormat": "\\(([^,]+),\\s*([^,]+),\\s*([^)]+)\\)",
+    "mentionHelp": "Use format: (Name, Description, Purpose)"
+  },
+"gemini": {
+  "model": "gemini-1.5-pro-latest",
+  "temperature": 0.7,
+  "maxTokens": 2048,
+  "templatePath": "templates/landing-template.txt",
+  "outputDir": "dist"
+},
+
+  "netlify": {
+  "deployFolder": "dist",
+  "siteName": "testgam",  
+  "customDomain": "testgam.netlify.app"  
+}
+}
